@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
-import { View, Text, StyleSheet, ScrollView, Button } from 'react-native';
 import { useRouter } from 'expo-router';
+import React, { useContext } from 'react';
+import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { ExercisesContext } from './_layout';
 
 const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];

@@ -1,6 +1,6 @@
 import { useRouter } from 'expo-router';
 import React, { useContext, useMemo, useState } from 'react';
-import { Button, FlatList, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { ExercisesContext } from './_layout';
 
 const PALETTE = ['#f9f7f3', '#f3fbff', '#f7fff1', '#fff7f3', '#f9f3ff', '#fffdf0'];

@@ -1,50 +1,111 @@
-# Welcome to your Expo app 👋
+# FitFlow - Fitness App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern fitness tracker app built with React Native & Expo. Track exercises, monitor progress, and stay motivated.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 📋 Home screen with exercise grid
+- 💪 Exercise detail view
+- ➕ Add custom exercises
+- ✅ Track completed workouts
+- 📊 Fitness statistics dashboard
+- 💡 Motivational quotes
+- 🔍 Search exercises
+- 🎨 Modern UI with animations
 
-   ```bash
-   npm install
-   ```
+## Installation
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```powershell
+npm install
+npx expo start -c
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Scan QR code with Expo Go app on your phone.
 
-## Learn more
+## Project Structure
 
-To learn more about developing your project with Expo, look at the following resources:
+```
+app/
+├── _layout.tsx       # Context & router setup
+├── index.tsx         # Home screen
+├── detail.tsx        # Exercise details
+├── add.tsx           # Add exercise form
+├── completed.tsx     # Completed exercises
+├── stats.tsx         # Statistics
+├── quotes.tsx        # Motivational quotes
+└── splash.tsx        # Splash screen
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Available Exercises
 
-## Join the community
+1. Push Ups
+2. Squats
+3. Plank
+4. Lunges
+5. Burpees
+6. Jumping Jacks
 
-Join our community of developers creating universal apps.
+## Tech Stack
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- React Native
+- Expo & Expo Router
+- TypeScript
+- AsyncStorage (optional)
+
+## Commands
+
+```powershell
+npm start          # Start dev server
+npm run android    # Build for Android
+npm run ios        # Build for iOS
+npm run web        # Build for web
+npm run lint       # Run linter
+```
+
+## Generate Logos (Optional)
+
+```powershell
+python scripts/generate-logo.py
+# or
+npm install sharp && node scripts/generate-logo.js
+```
+
+## Submission
+
+1. **Push to GitHub:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Fitness app"
+   git branch -M main
+   git remote add origin YOUR-REPO-URL
+   git push -u origin main
+   ```
+
+2. **Create zip:**
+   ```powershell
+   Compress-Archive -Path * -DestinationPath ../fitness-app.zip -Exclude "node_modules"
+   ```
+
+3. **Submit on Google Classroom** with GitHub link
+
+## Troubleshooting
+
+```powershell
+npx expo start -c        # Clear cache
+npm install              # Reinstall deps
+watchman watch-del-all   # Clear watchman
+```
+
+## Requirements ✅
+
+- ✅ Home, Detail, Add, Completed screens
+- ✅ Stats & Quotes features
+- ✅ Modern UI/UX
+- ✅ Search functionality
+- ✅ 6 sample exercises
+- ✅ Ready for GitHub & classroom submission
+
+---
+
+**Built with React Native & Expo | December 2025**

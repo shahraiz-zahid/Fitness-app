@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
-import { View, Text, FlatList, Button, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
+import React, { useContext } from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
 import { ExercisesContext } from './_layout';
 
 const PALETTE = ['#f9f7f3', '#f3fbff', '#f7fff1', '#fff7f3', '#f9f3ff', '#fffdf0'];
